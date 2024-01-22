@@ -1,0 +1,43 @@
+.qr-codes {
+    display: flex;
+    justify-content: center;
+    margin-top: 120px;
+    column-gap: 40px;
+    .qr {
+        width: 180px;
+        text-align: center;
+
+        img {
+            border-radius: 10px;
+        }
+
+        &-txt {
+            color: #fdfdfd;
+            margin-top: 20px;
+            font-weight: 700;
+            font-size: 26px;
+        }
+    }
+
+    .qr {
+        opacity: 0;
+    }
+
+    .qr-show {
+        animation: opacity1 1.0s ease-in-out forwards;
+    }
+
+    .qr2 {
+        opacity: 0;
+    }
+
+    .qr2-show {
+        animation: opacity1 1.8s ease-in-out forwards;
+    }
+}
+
+@media (max-width: 1000px) {
+    .qr-codes {
+        display: none;
+    }
+}
